@@ -618,14 +618,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     [
-      { id: "display-name", key: "display-name_legszk", formatter: up },
-      { id: "display-surname", key: "display-surname_legszk", formatter: up },
+      { id: "display-name", key: "name", formatter: up },
+      { id: "display-surname", key: "surname", formatter: up },
       {
         id: "display-birthDate",
-        key: "display-birthDate_legszk",
+        key: "birthDate",
         formatter: formatDateDots,
       },
-      { id: "display-pesel", key: "display-pesel_legszk", formatter: up },
+      { id: "display-pesel", key: "pesel", formatter: up },
       {
         id: "display-cardNumber",
         key: "display-cardNumber_legszk",
