@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Generator</title>
+</head>
+<body>
+
+<h2>Generator danych</h2>
+
+<input id="name" placeholder="Imię"><br><br>
+<input id="surname" placeholder="Nazwisko"><br><br>
+<input id="nationality" placeholder="Narodowość"><br><br>
+<input id="birthDate" placeholder="Data urodzenia"><br><br>
+<input id="pesel" placeholder="PESEL"><br><br>
+
+<input id="md_idSeries" placeholder="Seria"><br><br>
+<input id="md_expiryDate" placeholder="Data ważności"><br><br>
+<input id="md_issueDate" placeholder="Data wydania"><br><br>
+
+<input id="fathername" placeholder="Imię ojca"><br><br>
+<input id="mothername" placeholder="Imię matki"><br><br>
+
+<input id="lastName" placeholder="Nazwisko rodowe"><br><br>
+<input id="gender" placeholder="Płeć"><br><br>
+<input id="fatherSurname" placeholder="Nazwisko ojca"><br><br>
+<input id="motherSurname" placeholder="Nazwisko matki"><br><br>
+
+<input id="placeOfBirth" placeholder="Miejsce urodzenia"><br><br>
+<input id="address" placeholder="Adres"><br><br>
+<input id="postalcode" placeholder="Kod pocztowy"><br><br>
+<input id="registrationDate" placeholder="Data zameldowania"><br><br>
+
+<button onclick="saveData()">
+  Zapisz dane
+</button>
+
+<script>
+function saveData() {
+
+  localStorage.setItem("name",
+    document.getElementById("name").value);
+
+  localStorage.setItem("surname",
+    document.getElementById("surname").value);
+
+  localStorage.setItem("nationality",
+    document.getElementById("nationality").value);
+
+  localStorage.setItem("birthDate",
+    document.getElementById("birthDate").value);
+
+  localStorage.setItem("pesel",
+    document.getElementById("pesel").value);
+
+  localStorage.setItem("md_idSeries",
+    document.getElementById("md_idSeries").value);
+
+  localStorage.setItem("md_expiryDate",
+    document.getElementById("md_expiryDate").value);
+
+  localStorage.setItem("md_issueDate",
+    document.getElementById("md_issueDate").value);
+
+  localStorage.setItem("fathername",
+    document.getElementById("fathername").value);
+
+  localStorage.setItem("mothername",
+    document.getElementById("mothername").value);
+
+  localStorage.setItem("lastName",
+    document.getElementById("lastName").value);
+
+  localStorage.setItem("gender",
+    document.getElementById("gender").value);
+
+  localStorage.setItem("fatherSurname",
+    document.getElementById("fatherSurname").value);
+
+  localStorage.setItem("motherSurname",
+    document.getElementById("motherSurname").value);
+
+  localStorage.setItem("placeOfBirth",
+    document.getElementById("placeOfBirth").value);
+
+  localStorage.setItem("address",
+    document.getElementById("address").value);
+
+  localStorage.setItem("postalcode",
+    document.getElementById("postalcode").value);
+
+  localStorage.setItem("registrationDate",
+    document.getElementById("registrationDate").value);
+
+  alert("Dane zapisane");
+}
+</script>
+
+</body>
+</html>
