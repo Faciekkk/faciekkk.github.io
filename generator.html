@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Generator danych</title>
 
+  <style>
+    body{
+      background:#111;
+      color:white;
+      font-family:Arial;
+      padding:20px;
+    }
+
+    input{
+      display:block;
+      width:300px;
+      margin-bottom:10px;
+      padding:10px;
+      border:none;
+      border-radius:8px;
+    }
+
+    button{
+      padding:12px 20px;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+      font-size:16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Generator prawa jazdy</h1>
+
+  <input id="display-name_prawojazdy" placeholder="Imię">
+
+  <input id="display-surname_prawojazdy" placeholder="Nazwisko">
+
+  <input id="display-birthDate_prawojazdy" placeholder="Data urodzenia">
+
+  <input id="display-birthPlace_prawojazdy" placeholder="Miejsce urodzenia">
+
+  <input id="display-pesel_prawojazdy" placeholder="PESEL">
+
+  <input id="display-category_prawojazdy" placeholder="Kategoria">
+
+  <input id="display-expiryDate_prawojazdy" placeholder="Data ważności">
+
+  <input id="display-issueDate_prawojazdy" placeholder="Data wydania">
+
+  <input id="display-blanketStatus_prawojazdy" placeholder="Status">
+
+  <input id="display-documentNumber_prawojazdy" placeholder="Numer dokumentu">
+
+  <input id="display-blanketNumber_prawojazdy" placeholder="Numer blankietu">
+
+  <input id="display-issuingAuthority_prawojazdy" placeholder="Organ wydający">
+
+  <input id="display-restrictions_prawojazdy" placeholder="Ograniczenia">
+
+  <button id="generate">
+    Zapisz dane
+  </button>
+
+  <script>
+
+    document
+      .getElementById("generate")
+      .addEventListener("click", () => {
+
+        const fields = [
+
+          "display-name_prawojazdy",
+          "display-surname_prawojazdy",
+          "display-birthDate_prawojazdy",
+          "display-birthPlace_prawojazdy",
+          "display-pesel_prawojazdy",
+          "display-category_prawojazdy",
+          "display-expiryDate_prawojazdy",
+          "display-issueDate_prawojazdy",
+          "display-blanketStatus_prawojazdy",
+          "display-documentNumber_prawojazdy",
+          "display-blanketNumber_prawojazdy",
+          "display-issuingAuthority_prawojazdy",
+          "display-restrictions_prawojazdy"
+
+        ];
+
+        fields.forEach(field => {
+
+          localStorage.setItem(
+            field,
+            document.getElementById(field).value
+          );
+
+        });
+
+        localStorage.setItem(
+          "pj_generatedAt",
+          Date.now()
+        );
+
+        alert("Dane zapisane");
+
+      });
+
+  </script>
+
+</body>
+</html>
