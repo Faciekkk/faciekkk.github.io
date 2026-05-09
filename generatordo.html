@@ -97,7 +97,7 @@ button:hover {
     </div>
 
     <div class="input-group">
-        <label>Obywatelstwo</label>
+        <label>Narodowość</label>
         <input id="nationality" type="text">
     </div>
 
@@ -141,6 +141,56 @@ button:hover {
         <input id="address" type="text">
     </div>
 
+    <div class="input-group">
+        <label>Nazwisko rodowe</label>
+        <input id="lastName" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Płeć</label>
+        <input id="gender" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Nazwisko ojca</label>
+        <input id="fatherSurname" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Nazwisko matki</label>
+        <input id="motherSurname" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Miejsce urodzenia</label>
+        <input id="placeOfBirth" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Kod pocztowy</label>
+        <input id="postalcode" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Data zameldowania</label>
+        <input id="registrationDate" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Numer dowodu</label>
+        <input id="do_idSeries" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Data ważności dowodu</label>
+        <input id="do_expiryDate" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Data wydania dowodu</label>
+        <input id="do_issueDate" type="text">
+    </div>
+
     <button onclick="saveData()">
         Zapisz dane
     </button>
@@ -168,6 +218,18 @@ function saveData() {
 
     localStorage.setItem("address", document.getElementById("address").value);
 
+    localStorage.setItem("lastName", document.getElementById("lastName").value);
+    localStorage.setItem("gender", document.getElementById("gender").value);
+    localStorage.setItem("fatherSurname", document.getElementById("fatherSurname").value);
+    localStorage.setItem("motherSurname", document.getElementById("motherSurname").value);
+    localStorage.setItem("placeOfBirth", document.getElementById("placeOfBirth").value);
+    localStorage.setItem("postalcode", document.getElementById("postalcode").value);
+    localStorage.setItem("registrationDate", document.getElementById("registrationDate").value);
+
+    localStorage.setItem("do_idSeries", document.getElementById("do_idSeries").value);
+    localStorage.setItem("do_expiryDate", document.getElementById("do_expiryDate").value);
+    localStorage.setItem("do_issueDate", document.getElementById("do_issueDate").value);
+
     document.getElementById("success").style.display = "block";
 
     setTimeout(() => {
@@ -178,4 +240,3 @@ function saveData() {
 
 </body>
 </html>
-```
