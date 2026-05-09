@@ -87,6 +87,11 @@ button:hover {
     <h1>Generator danych eDowodu</h1>
 
     <div class="input-group">
+        <label>Zdjęcie</label>
+        <input id="photoInput" type="file" accept="image/*">
+    </div>
+    
+    <div class="input-group">
         <label>Imię</label>
         <input id="name" type="text">
     </div>
@@ -201,6 +206,29 @@ button:hover {
 </div>
 
 <script>
+
+    const photoInput = document.getElementById("photoInput");
+
+photoInput.addEventListener("change", function () {
+
+    const file = this.files[0];
+
+    if (!file) return;
+
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+
+        localStorage.setItem(
+            "profileImage",
+            e.target.result
+        );
+
+    };
+
+    reader.readAsDataURL(file);
+
+});
 function saveData() {
 
     localStorage.setItem("name", document.getElementById("name").value);
