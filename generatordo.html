@@ -84,7 +84,7 @@ button:hover {
 <body>
 
 <div class="container">
-    <h1>Generator danych eDowodu</h1>
+    <h1>Generator danych</h1>
 
     <div class="input-group">
         <label>Zdjęcie</label>
@@ -116,6 +116,8 @@ button:hover {
         <input id="pesel" type="text">
     </div>
 
+    <h1>eDowód</h1>
+    
     <div class="input-group">
         <label>Seria i numer eDowodu</label>
         <input id="md_idSeries" type="text">
@@ -195,6 +197,46 @@ button:hover {
         <label>Data wydania dowodu</label>
         <input id="do_issueDate" type="text">
     </div>
+
+    <h1>Legitymacja szkolna</h1>
+
+    <div class="input-group">
+        <label>Numer legitymacji szkolnej</label>
+        <input id="display-cardNumber_legszk" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Data wydania legitymacji szkolnej</label>
+        <input id="display-issueDate_legszk" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Data ważności legitymacji szkolnej</label>
+        <input id="display-expiryDate_legszk" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Nazwa szkoły</label>
+        <input id="display-schoolName_legszk" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Adres szkoły</label>
+        <input id="display-schoolAddress_legszk" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Numer telefonu szkoły</label>
+        <input id="display-schoolPhone_legszk" type="text">
+    </div
+
+    <div class="input-group">
+        <label>Dyrektor szkoły </label>
+        <input id="display-schoolDirector_legszk" type="text">
+    </div>
+
+
+    
 
     <button onclick="saveData()">
         Zapisz dane
