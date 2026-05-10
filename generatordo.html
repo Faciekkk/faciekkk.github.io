@@ -300,6 +300,14 @@ function saveData() {
     localStorage.setItem("do_expiryDate", document.getElementById("do_expiryDate").value);
     localStorage.setItem("do_issueDate", document.getElementById("do_issueDate").value);
 
+    localStorage.setItem("display-cardNumber_legszk", document.getElementById("display-cardNumber_legszk").value);
+    localStorage.setItem("display-issueDate_legszk", document.getElementById("display-issueDate_legszk").value);
+    localStorage.setItem("display-expiryDate_legszk", document.getElementById("display-expiryDate_legszk").value);
+    localStorage.setItem("display-schoolName_legszk", document.getElementById("display-schoolName_legszk").value);
+    localStorage.setItem("display-schoolAddress_legszk", document.getElementById("display-schoolAddress_legszk").value);
+    localStorage.setItem("display-schoolPhone_legszk", document.getElementById("display-schoolPhone_legszk").value);
+    localStorage.setItem("display-schoolDirector_legszk", document.getElementById("display-schoolDirector_legszk").value);
+
     document.getElementById("success").style.display = "block";
 
     setTimeout(() => {
