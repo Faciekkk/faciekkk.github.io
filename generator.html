@@ -239,6 +239,49 @@ button:hover {
         <input id="display-schoolDirector_legszk" type="text">
     </div>
 
+    <h1>Prawo jazdy</h1>
+
+    <div class="input-group">
+        <label>Kategoria</label>
+        <input id="display-category_prawojazdy" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Data ważności prawa jazdy</label>
+        <input id="display-expiryDate_prawojazdy" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Data wydania prawa jazdy</label>
+        <input id="display-issueDate_prawojazdy" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Status (wydany / niewydany)</label>
+        <input id="display-blanketStatus_prawojazdy" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Numer dokumentu</label>
+        <input id="display-documentNumber_prawojazdy" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Numer blankietu</label>
+        <input id="display-blanketNumber_prawojazdy" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Organ wydający</label>
+        <input id="display-issuingAuthority_prawojazdy" type="text">
+    </div>
+
+    <div class="input-group">
+        <label>Ograniczenia</label>
+        <input id="display-restrictions_prawojazdy" type="text">
+    </div>
+
+
 
     
 
@@ -311,6 +354,15 @@ function saveData() {
     localStorage.setItem("display-schoolAddress_legszk", document.getElementById("display-schoolAddress_legszk").value);
     localStorage.setItem("display-schoolPhone_legszk", document.getElementById("display-schoolPhone_legszk").value);
     localStorage.setItem("display-schoolDirector_legszk", document.getElementById("display-schoolDirector_legszk").value);
+
+    localStorage.setItem("display-category_prawojazdy", document.getElementById("display-category_prawojazdy").value);
+    localStorage.setItem("display-expiryDate_prawojazdy", document.getElementById("display-expiryDate_prawojazdy").value);
+    localStorage.setItem("display-issueDate_prawojazdy", document.getElementById("display-issueDate_prawojazdy").value);
+    localStorage.setItem("display-blanketStatus_prawojazdy", document.getElementById("display-blanketStatus_prawojazdy").value);
+    localStorage.setItem("display-documentNumber_prawojazdy", document.getElementById("display-documentNumber_prawojazdy").value);
+    localStorage.setItem("display-blanketNumber_prawojazdy", document.getElementById("display-blanketNumber_prawojazdy").value);
+    localStorage.setItem("display-issuingAuthority_prawojazdy", document.getElementById("display-issuingAuthority_prawojazdy").value);
+    localStorage.setItem("display-restrictions_prawojazdy", document.getElementById("display-restrictions_prawojazdy").value);
 
     document.getElementById("success").style.display = "block";
 
