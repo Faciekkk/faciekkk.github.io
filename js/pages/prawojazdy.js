@@ -657,23 +657,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     [
-      { id: "display-name", key: "display-name_prawojazdy", formatter: up },
+      { id: "display-name", key: "name", formatter: up },
       {
         id: "display-surname",
-        key: "display-surname_prawojazdy",
+        key: "surname",
         formatter: up,
       },
       {
         id: "display-birthDate",
-        key: "display-birthDate_prawojazdy",
+        key: "birthDate",
         formatter: formatDateDots,
       },
       {
         id: "display-birthPlace",
-        key: "display-birthPlace_prawojazdy",
+        key: "placeOfBirth",
         formatter: up,
       },
-      { id: "display-pesel", key: "display-pesel_prawojazdy", formatter: up },
+      { id: "display-pesel", key: "pesel", formatter: up },
       {
         id: "display-category",
         key: "display-category_prawojazdy",
