@@ -1173,7 +1173,7 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/orzel/godlo%20backnic.gif");
+  background-image: url("../../assets/orzel/godlo%20back.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1231,8 +1231,8 @@ footer {
   opacity: 0;
   background-position: center 50%;
   transition: opacity 0.15s ease, background-position 0.2s ease;
-  -webkit-mask-image: url("../../assets/orzel/godlo%20backnic.gif");
-  mask-image: url("../../assets/orzel/godlo%20backnic.gif");
+  -webkit-mask-image: url("../../assets/orzel/godlo%20back.png");
+  mask-image: url("../../assets/orzel/godlo%20back.png");
   -webkit-mask-size: contain;
   mask-size: contain;
   -webkit-mask-repeat: no-repeat;
